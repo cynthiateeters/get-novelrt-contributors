@@ -55,7 +55,7 @@ for (let i = 0; i < repos.length; i++) {
   obj.repo_name = repoName;
   const data = await getData(repoName);
   if (data) {
-    obj.contributors = data;
+    obj.contributors = data.sort((a, b) => b.contributions > a.contributions ? 1 : -1);
     jsonData.repos.push(obj);
     console.log(`repo ${repoName} has ${data.length} contributors`);
   }
