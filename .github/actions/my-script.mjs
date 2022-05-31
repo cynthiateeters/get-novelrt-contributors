@@ -25,6 +25,7 @@ const repos = [
  Each repo has an object with the following properties:
  {
   "repo_name": "repo_name",
+  "repo_url": "repo_url",
   "contributors": [] // array of contributors
  }
 */
@@ -53,6 +54,7 @@ for (let i = 0; i < repos.length; i++) {
   const obj = {}
   const repoName = repos[i];
   obj.repo_name = repoName;
+  obj.repo_url = `https://github.com/${owner}/${repoName}`;
   const data = await getData(repoName);
   if (Array.isArray(data) && data.length > 0) {
     obj.contributors = data.sort((a, b) => b.contributions > a.contributions ? 1 : -1);
