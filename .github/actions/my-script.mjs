@@ -36,11 +36,16 @@ const jsonData = {
 
 /* Octokit request (which does the GH auth for us) */
 const getData = async (repoName) => {
-  const { data } = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
+  try {
+    const { data } = await octokit.request('GET /repos/{owner}/{repo}/contributors', {
     owner: owner,
     repo: repoName
   })
   return data;
+  } catch (error) {
+    console.log(`error with repo ${repoName}: ${error}`);
+    return;
+  }
 };
 
 /* Need a plain "for loop" because of the await call */
@@ -49,9 +54,11 @@ for (let i = 0; i < repos.length; i++) {
   const repoName = repos[i];
   obj.repo_name = repoName;
   const data = await getData(repoName);
-  obj.contributors = data;
-  jsonData.repos.push(obj);
-  console.log(`repo ${repoName} has ${data.length} contributors`);
+  if (data) {
+    obj.contributors = data;
+    jsonData.repos.push(obj);
+    console.log(`repo ${repoName} has ${data.length} contributors`);
+  }
 }
 
 /* Keep data formatted for easy reading */
