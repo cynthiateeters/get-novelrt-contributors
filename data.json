@@ -1,8 +1,9 @@
 {
-  "timestamp": "2022-05-31T20:10:04.283Z",
+  "timestamp": "2022-05-31T21:04:48.110Z",
   "repos": [
     {
       "repo_name": "NovelRT",
+      "repo_url": "https://github.com/novelrt/NovelRT",
       "contributors": [
         {
           "login": "RubyNova",
@@ -638,6 +639,7 @@
     },
     {
       "repo_name": "novelrt.github.io",
+      "repo_url": "https://github.com/novelrt/novelrt.github.io",
       "contributors": [
         {
           "login": "TraceLD",
@@ -811,6 +813,7 @@
     },
     {
       "repo_name": "NovelRT-Azure-Functions",
+      "repo_url": "https://github.com/novelrt/NovelRT-Azure-Functions",
       "contributors": [
         {
           "login": "TraceLD",
@@ -858,6 +861,7 @@
     },
     {
       "repo_name": "NovelRT.Sdk",
+      "repo_url": "https://github.com/novelrt/NovelRT.Sdk",
       "contributors": [
         {
           "login": "RubyNova",
@@ -905,6 +909,7 @@
     },
     {
       "repo_name": "Fabulist",
+      "repo_url": "https://github.com/novelrt/Fabulist",
       "contributors": [
         {
           "login": "FiniteReality",
@@ -931,6 +936,7 @@
     },
     {
       "repo_name": "NovelRT-Gradle-Plugin",
+      "repo_url": "https://github.com/novelrt/NovelRT-Gradle-Plugin",
       "contributors": [
         {
           "login": "jeuxjeux20",
@@ -957,6 +963,7 @@
     },
     {
       "repo_name": "FumoCement",
+      "repo_url": "https://github.com/novelrt/FumoCement",
       "contributors": [
         {
           "login": "jeuxjeux20",
@@ -1004,6 +1011,7 @@
     },
     {
       "repo_name": "Touhou-NovelRT",
+      "repo_url": "https://github.com/novelrt/Touhou-NovelRT",
       "contributors": [
         {
           "login": "RubyNova",
