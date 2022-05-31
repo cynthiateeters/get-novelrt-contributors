@@ -15,6 +15,7 @@ const repos = [
   "NovelRT.Sdk",
   "NovelRT",
   "Fabulist",
+  "no-such-repo",
   "NovelRT-Gradle-Plugin",
   "FumoCement",
   "Touhou-NovelRT",
