@@ -10,10 +10,10 @@ const timestamp = new Date().toISOString();
 
 /* List of repos to be queried for contributors */
 const repos = [
+  "NovelRT",
   "novelrt.github.io",
   "NovelRT-Azure-Functions",
   "NovelRT.Sdk",
-  "NovelRT",
   "Fabulist",
   "NovelRT-Gradle-Plugin",
   "FumoCement",
