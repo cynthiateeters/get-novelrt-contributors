@@ -1,4 +1,4 @@
-# Using GitHub Action & Octokit to make Contributors JSON file
+# Using GitHub Actions & Octokit to make Contributors JSON file
 
 Based off of this [Octokit Example](https://github.com/octokit/action.js)
 
