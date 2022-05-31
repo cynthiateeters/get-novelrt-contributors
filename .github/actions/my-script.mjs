@@ -15,7 +15,6 @@ const repos = [
   "NovelRT.Sdk",
   "NovelRT",
   "Fabulist",
-  "no-such-repo",
   "NovelRT-Gradle-Plugin",
   "FumoCement",
   "Touhou-NovelRT",
@@ -44,7 +43,7 @@ const getData = async (repoName) => {
   })
   return data;
   } catch (error) {
-    console.log(`error with repo ${repoName}: ${error}`);
+    console.log(`error with repo: ${repoName}: ${error}`);
     return;
   }
 };
